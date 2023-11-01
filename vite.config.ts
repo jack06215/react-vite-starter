@@ -17,7 +17,7 @@ export default defineConfig(({ mode }) => {
     {},
   );
   return {
-    base: '/space',
+    base: '/',
     define: {
       ...envWithProcessPrefix,
       APP_VERSION: JSON.stringify(process.env.npm_package_version),
