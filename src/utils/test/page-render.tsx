@@ -4,7 +4,6 @@ import {
   render,
   RenderOptions,
 } from '@testing-library/react';
-import { StoreProvider } from 'providers/StoreProvider';
 import { ThemeProvider } from 'providers/ThemeProvider';
 import { MemoryRouter } from 'react-router-dom';
 
@@ -15,9 +14,7 @@ type Props = {
 const PageProvider: React.FC<Props> = ({ children }) => {
   return (
     <ThemeProvider>
-      <StoreProvider>
-        <MemoryRouter>{children}</MemoryRouter>
-      </StoreProvider>
+      <MemoryRouter>{children}</MemoryRouter>
     </ThemeProvider>
   );
 };
