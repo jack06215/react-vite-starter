@@ -1,0 +1,13 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "jest.jestCommandLine": "yarn test:unit",
+  "jest.autoRun": {
+    "watch": false,
+    "onSave": "test-only"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
